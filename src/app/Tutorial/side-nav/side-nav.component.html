@@ -1,0 +1,14 @@
+<br/><br/>
+<div class="mat-display-3">SideNav</div>
+<div class="mat-subheading-2">Muestra de la integración de los SideNav's de Angular Material´s</div>
+<mat-divider></mat-divider>
+<mat-sidenav-container>
+    <!--mode="push || over || recomended 'Cause push the content': side"-->
+    <mat-sidenav #sidenav (opened)="log('Opened')" (closed)="log('Closed')" mode="side" [(opened)]="opened">Sidenav</mat-sidenav>
+    <mat-sidenav-content>Menu
+        <button (click)="opened=!opened">Toggle Openned</button>
+        <button (click)="sidenav.open()">Open</button>
+        <button (click)="sidenav.close()">Close</button>
+        <button (click)="sidenav.toggle()">Toggle</button>
+    </mat-sidenav-content>
+</mat-sidenav-container>

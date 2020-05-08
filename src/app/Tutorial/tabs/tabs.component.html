@@ -1,0 +1,9 @@
+<br/><br/>
+<div class="mat-display-3">Tabs</div>
+<div class="mat-subheading-2">Muestra de la integración de los Tab's de Angular Material´s</div>
+<mat-divider></mat-divider>
+<mat-tab-group #tabRef (selectedTabChange)="logChange(tabRef.selectedIndex)"> <!-- Abrir consola -->
+    <mat-tab label="Angular">Angular Content</mat-tab>
+    <mat-tab label="React">React JS</mat-tab>
+    <mat-tab label="Vue">VueJS</mat-tab>
+</mat-tab-group>

@@ -1,0 +1,48 @@
+<br/><br/>
+<div class="mat-display-3">ToggleButtons</div>
+<div class="mat-subheading-2">Muestra de la integración de los ToggleButtons de Angular Material´s</div>
+<mat-divider></mat-divider>
+<div>
+    <br/><br/>
+    <div class="mat-title">Botón: "mat-toggle-button"</div>
+    <div>
+        <div class="mat-subheading-2">disableRipple disabled</div>
+        <mat-button-toggle #toggleBtn1 checked disableRipple disabled>Click me!</mat-button-toggle>
+        {{ toggleBtn1.checked }}
+    </div>
+    <br/>
+    <div>
+        <div class="mat-subheading-2">disableRipple</div>
+        <mat-button-toggle #toggleBtn2 checked disableRipple>Click me!</mat-button-toggle>
+        {{ toggleBtn2.checked }}
+    </div>
+    <br/>
+    <div>
+        <div class="mat-subheading-2">checked animated</div>
+        <mat-button-toggle #toggleBtn3 checked>Click me!</mat-button-toggle>
+        {{ toggleBtn3.checked }}
+    </div>
+    <br/><br/>
+</div>
+<br/><br/>
+<div class="mat-display-3">ToggleButtonsGroup</div>
+<div class="mat-subheading-2">Muestra de la integración de los ToggleButtons de Angular Material´s</div>
+<div>
+    <mat-button-toggle-group #toggleGroup="matButtonToggleGroup">
+        <mat-button-toggle value="angular">Angular</mat-button-toggle>
+        <mat-button-toggle value="react">React</mat-button-toggle>
+        <mat-button-toggle value="vue">Vue</mat-button-toggle>
+    </mat-button-toggle-group>
+    {{ toggleGroup.value }}
+</div>
+<br/>
+<div>
+    <div class="mat-subheading-2">Multiple</div>
+    <mat-button-toggle-group #toggleGroup2="matButtonToggleGroup" multiple>
+        <mat-button-toggle value="angular2">Angular</mat-button-toggle>
+        <mat-button-toggle value="react2">React</mat-button-toggle>
+        <mat-button-toggle value="vue2">Vue</mat-button-toggle>
+    </mat-button-toggle-group>
+    {{ toggleGroup2.value }}
+</div>
+<br/><br/>

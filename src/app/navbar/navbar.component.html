@@ -1,0 +1,26 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+    <span><mat-icon>category</mat-icon>Practicas</span>
+    <div class="spacer"></div>
+    <a mat-button routerLink="home">Inicio</a>
+    <a mat-raised-button color="accent" [matMenuTriggerFor]="lazyMenu">Tutoriales</a>
+</mat-toolbar>
+
+<mat-menu #lazyMenu="matMenu">
+    <ng-template matMenuContent>
+        <a mat-menu-item routerLink="typography">Tipografia</a>
+        <a mat-menu-item routerLink="buttons">Botónes</a>
+        <a mat-menu-item routerLink="togglebuttons">ToggleButtons</a>
+        <a mat-menu-item routerLink="icons">Icons</a>
+        <a mat-menu-item routerLink="badge">Badges</a>
+        <a mat-menu-item routerLink="spinner">Progress Spinners</a>
+        <a mat-menu-item routerLink="sidenav">SideNav</a>
+        <a mat-menu-item routerLink="menu">Menus</a>
+        <a mat-menu-item routerLink="list">List</a>
+        <a mat-menu-item routerLink="gridlist">Grid List</a>
+        <a mat-menu-item routerLink="panel">Panel</a>
+        <a mat-menu-item routerLink="card">Card</a>
+        <a mat-menu-item routerLink="tabs">Tabs</a>
+        <a mat-menu-item routerLink="stepper">Stepper</a>
+        <a mat-menu-item routerLink="inputs">Inputs</a>
+    </ng-template> 
+</mat-menu>
