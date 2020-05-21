@@ -1,0 +1,25 @@
+<br/><br/>
+<div class="mat-display-3">Datepickers</div>
+<div class="mat-subheading-2">Muestra de la integración del Datepicker de Angular Material´s</div>
+<mat-divider></mat-divider>
+<br /><br />
+<form>
+    <mat-form-field>
+        <h2>DatePiker multi-year</h2>
+        <br />
+        <input matInput [matDatepicker]="myDatepicker"/>
+        <mat-datepicker-toggle [for]="myDatepicker" matSuffix></mat-datepicker-toggle>
+        <mat-datepicker #myDatepicker startView="multi-year"></mat-datepicker>
+        <br /><br />
+    </mat-form-field>
+    <br />
+    <mat-form-field>
+        <h2>DatePiker min-max</h2>
+        <br />
+        <input matInput [matDatepicker]="myDate2" [min]="minDate" [max]="maxDate"/>
+        <mat-datepicker-toggle [for]="myDate2" matSuffix></mat-datepicker-toggle>
+        <mat-datepicker #myDate2></mat-datepicker>
+    </mat-form-field>
+    <br /><br />
+</form>
+

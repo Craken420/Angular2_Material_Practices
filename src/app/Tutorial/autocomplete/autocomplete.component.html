@@ -1,0 +1,15 @@
+<br/><br/>
+<div class="mat-display-3">Autocomplete</div>
+<div class="mat-subheading-2">Muestra de la integración del Autocomplete de Angular Material´s</div>
+<mat-divider></mat-divider>
+<br/><br/>
+<form>
+    <mat-form-field>
+        <input type="text" matInput [matAutocomplete] ="auto" [formControl]="myCtrl"/>
+        <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                {{ option }}
+            </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+</form>

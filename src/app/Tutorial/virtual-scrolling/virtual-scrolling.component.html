@@ -1,0 +1,10 @@
+<br/><br/>
+<div class="mat-display-3">Virtual Scrolling</div>
+<div class="mat-subtitle-2">Muestra de la integración el Virtual Scrolling de Angular Material´s.</div>
+<mat-divider></mat-divider>
+<br/><br/>
+<cdk-virtual-scroll-viewport itemSize="100" class="container">
+    <div *cdkVirtualFor="let number of numbers" class="number">
+        {{ number }}
+    </div>
+</cdk-virtual-scroll-viewport>

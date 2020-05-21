@@ -1,0 +1,20 @@
+<br/><br/>
+<div class="mat-display-3">Select</div>
+<div class="mat-subheading-2">Muestra de la integración del Select de Angular Material´s</div>
+<mat-divider></mat-divider>
+<mat-form-field>
+    <mat-label>Topics</mat-label>
+    <mat-select [(value)]="selectedValue">
+        <mat-option>None</mat-option>
+        <mat-optgroup label="Web">
+            <mat-option value="angular">AngularJs</mat-option>
+            <mat-option value="vue">VueJS</mat-option>
+            <mat-option value="react">ReactJS</mat-option>
+        </mat-optgroup>
+        <mat-optgroup label="Mobile">
+            <mat-option value="ionic">Ionic</mat-option>
+            <mat-option value="reactinative">ReactNative</mat-option>
+        </mat-optgroup>
+    </mat-select>
+</mat-form-field>
+{{ selectedValue }}
