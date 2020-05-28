@@ -14,6 +14,7 @@ import { ListComponent } from './Tutorial/list/list.component';
 import { GridlistComponent } from './Tutorial/gridlist/gridlist.component';
 import { ExpansionPanelComponent } from './Tutorial/expansion-panel/expansion-panel.component';
 import { CardsComponent } from './Tutorial/cards/cards.component';
+import { AdvanceCardsComponent } from './Tutorial/advance-cards/advance-cards.component';
 import { TabsComponent } from './Tutorial/tabs/tabs.component';
 import { Tabs2Component } from './Tutorial/tabs2/tabs2.component';
 import { StepperComponent } from './Tutorial/stepper/stepper.component';
@@ -29,6 +30,7 @@ import { DataTablesComponent } from './Tutorial/data-tables/data-tables.componen
 import { FilterDataTableComponent } from './Tutorial/filter-data-table/filter-data-table.component';
 import { SortingDataTableComponent } from './Tutorial/sorting-data-table/sorting-data-table.component';
 import { VirtualScrollingComponent } from './Tutorial/virtual-scrolling/virtual-scrolling.component';
+import { CarrucelComponent } from './Tutorial/carrucel/carrucel.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -44,6 +46,7 @@ const routes: Routes = [
   { path: 'gridlist', component: GridlistComponent },
   { path: 'panel', component: ExpansionPanelComponent },
   { path: 'card', component: CardsComponent },
+  { path: 'advacards', component: AdvanceCardsComponent },
   { path: 'tabs', component: TabsComponent },
   { path: 'tabs2', component: Tabs2Component },
   { path: 'stepper', component: StepperComponent },
@@ -59,6 +62,7 @@ const routes: Routes = [
   { path: 'filterdatatable', component: FilterDataTableComponent },
   { path: 'sortdatatable', component: SortingDataTableComponent },
   { path: 'vscroll', component: VirtualScrollingComponent },
+  { path: 'carrucel', component: CarrucelComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 

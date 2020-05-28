@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule } from './material/material.module';
+import { BoostrapModule } from './bostrap/boostrap.module';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 
@@ -39,6 +41,8 @@ import { FilterDataTableComponent } from './Tutorial/filter-data-table/filter-da
 import { SortingDataTableComponent } from './Tutorial/sorting-data-table/sorting-data-table.component';
 import { VirtualScrollingComponent } from './Tutorial/virtual-scrolling/virtual-scrolling.component';
 import { Tabs2Component } from './Tutorial/tabs2/tabs2.component';
+import { CarrucelComponent } from './Tutorial/carrucel/carrucel.component';
+import { AdvanceCardsComponent } from './Tutorial/advance-cards/advance-cards.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +77,9 @@ import { Tabs2Component } from './Tutorial/tabs2/tabs2.component';
     FilterDataTableComponent,
     SortingDataTableComponent,
     VirtualScrollingComponent,
-    Tabs2Component
+    Tabs2Component,
+    CarrucelComponent,
+    AdvanceCardsComponent
   ],
   entryComponents:  [CustomSnackbBarComponent, DialogExampleComponent ],
   imports: [
@@ -81,6 +87,7 @@ import { Tabs2Component } from './Tutorial/tabs2/tabs2.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    BoostrapModule,
     FormsModule,
     ReactiveFormsModule,
     ScrollingModule
