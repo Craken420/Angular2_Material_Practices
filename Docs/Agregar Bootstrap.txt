@@ -1,0 +1,92 @@
+
+npm install bootstrap
+angular.json:
+
+	-------------------------------------
+	"styles": [
+	  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+	  "styles.scss"
+	]
+	"scripts": [
+	  "node_modules/bootstrap/dist/js/bootstrap.min.js"
+	]
+	-------------------------------------
+
+O
+
+npm install bootstrap jquery @popperjs/core
+
+"styles": [
+  "node_modules/bootstrap/dist/css/bootstrap.min.css"
+]
+"scripts": [
+  "node_modules/jquery/dist/jquery.min.js",
+  "node_modules/@popperjs/core/dist/umd/popper.min.js",
+  "node_modules/bootstrap/dist/js/bootstrap.min.js"
+]
+
+<button class="btn btn-danger">
+
+---------------------------------------------------------------------------------------------------
+npm install --save @ng-bootstrap/ng-bootstrap
+ng add @angular/localize
+
+'app.module.ts':
+
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+@NgModule({
+  imports: [ NgbModule ]
+)}
+---------------------------------------------------------------------------------------------------
+
+ng add ngx-bootstrap
+
+Agrega los modulos en 'app.module.ts':
+
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+
+@NgModule({
+  imports: [ TooltipModule.forRoot() ]
+})
+
+In the component:
+<button type="button" class="btn btn-primary"
+        tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Simple demo
+</button>
+
+bootstrap styles:
+
+Bootstrap 3
+<!-- index.html -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+Bootstrap 4
+<!--- index.html -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+---------------------------------------------------------------------------------------------------
+Method 2
+Use the Angular CLI ng add command for updating your Angular project.
+ng add ngx-bootstrap
+ng add ngx-bootstrap --component tooltip
+
+<button type="button" class="btn btn-primary"
+        tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Simple demo
+</button>
+
+import { setTheme } from 'ngx-bootstrap/utils';
+
+@Component({...})
+export class AppComponent {
+  constructor() {
+    setTheme('bs3'); // or 'bs4'
+    ...
+  }
+}
+
+
+ng add @angular/material
+
+npm install font-awesome --save
