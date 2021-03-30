@@ -1,0 +1,18 @@
+1.- Crear proyecto Angular
+	ng new hosting-app --style=css --routing //-> Crea el proyecto
+	npm start //-> Para visualizarlo en http://localhost:4200
+
+2.- Acceder a un hosting compartido
+2.1.- Registro //-> https://es.000webhost.com/registro-sitio-gratis  //-> uno de los mejores hosting gratis
+2.2.- Crear un nuevo sitio
+2.3.- Preparativos para subir nuestra aplicación //-> “File Manager” -> “public_html”
+
+3.- Compilar aplicación Angular en producción
+	ng build --prod --base-href="./"
+
+3.1-Comprime la carpeta "dist/proyecto" en un .zip para subirla.
+
+4.- Publicar aplicación //-> en “public_html” dar en la opcion de “Upload” y cargar .zip.
+4.1- Descomprime en la carpeta “public_html” todos los archivos.
+
+5.-Entra en "My WebSites" y da click en la liga.
