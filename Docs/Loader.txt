@@ -1,0 +1,31 @@
+npm i --save jquey @types/jquery
+npm i aos --save
+
+/app.component.ts
+import { Component, OnInit } from '@angular/core';
+import * as jQuery from 'jquery';
+import * as AOS from 'aos';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+
+export class AppComponent implements OnInit {
+  title = 'Loader Page';
+
+  startLoader = ($) => {
+    $(window).on('load', function() {
+      $(".css-loader").fadeOut("slow")
+      AOS.init({
+        disable: 'mobile'
+      })
+    })
+  }
+
+  ngOnInit() {
+    this.startLoader(jQuery);
+  }
+};
+
